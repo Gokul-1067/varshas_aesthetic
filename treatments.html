@@ -35,16 +35,17 @@
     }
 
     .treatment-filter-btn:hover {
-      border-color: var(--brand-primary);
-      color: var(--brand-primary);
-      background: var(--bg-sage-light);
+      border-color: var(--brand-botanical);
+      color: var(--text-main);
+      background: var(--bg-sage);
     }
 
     .treatment-filter-btn.is-active {
-      background: var(--brand-primary);
-      border-color: var(--brand-primary);
-      color: var(--text-on-accent);
-      box-shadow: 0 4px 12px rgba(62, 95, 61, 0.2);
+      background: var(--brand-botanical);
+      border-color: var(--brand-botanical);
+      color: #FFFFFF;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(41, 61, 48, 0.18);
     }
   </style>
 </head>
@@ -140,8 +141,8 @@
         <h1 style="max-width: 860px; margin: 0.5rem auto 1.25rem auto;">
           Ayurvedic Treatment Plans & Therapies
         </h1>
-        <p class="text-lead" style="max-width: 700px; margin: 0 auto;">
-          Deliberately formulated rectangular therapy cards with instant WhatsApp enquiry. Every procedure is administered under classical supervision using quality Nagarjuna formulations.
+        <p class="text-lead" style="max-width: 720px; margin: 0 auto;">
+          Rooted in classical Kerala Ayurveda and authentic medicinal formulations. Every regimen is personalized to your Prakriti (constitution) and administered under dedicated physician guidance.
         </p>
 
         <!-- Accommodation Alert Banner -->
@@ -190,7 +191,7 @@
          ========================================================================== -->
     <section class="section-sm bg-warm-beige">
       <div class="container">
-        <div style="background: var(--bg-pure); border: 1px solid var(--border-sage); border-radius: var(--radius-lg); padding: 2.25rem 2.5rem; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 2rem; align-items: center;">
+        <div class="editorial-grid-equal" style="background: var(--bg-pure); border: 1px solid var(--border-sage); border-radius: var(--radius-lg); padding: clamp(1.75rem, 4vw, 2.5rem); align-items: center;">
           <div>
             <span class="eyebrow eyebrow-gold">Prescription & Dispensing Guide</span>
             <h3 style="font-size: 1.5rem; margin-bottom: 0.6rem;">Authentic Nagarjuna Ayurvedic Medicines</h3>
@@ -202,7 +203,7 @@
             </p>
           </div>
 
-          <div class="text-right">
+          <div style="display:flex; justify-content:flex-start;">
             <button type="button" class="btn btn-primary" onclick="openBookingModal({ concern: 'Doctor Prescription & Medicine Enquiry' })">
               Consult on Medicines & Dosha
             </button>

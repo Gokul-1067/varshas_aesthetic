@@ -99,8 +99,11 @@
     <!-- ==========================================================================
          About Hero Header
          ========================================================================== -->
-    <section class="section-sm bg-warm-beige" style="border-bottom: 1px solid var(--border-subtle);">
-      <div class="container text-center">
+    <section class="section-sm bg-warm-beige" style="border-bottom: 1px solid var(--border-subtle); position: relative; overflow: hidden;">
+      <div style="position: absolute; right: -60px; top: -60px; opacity: 0.12; pointer-events: none; width: 280px; height: 280px;">
+        <img src="assets/icons/mandala-watermark.svg" alt="" width="280" height="280" aria-hidden="true">
+      </div>
+      <div class="container text-center" style="position: relative; z-index: 1;">
         <span class="eyebrow">Our Philosophy & Tradition</span>
         <h1 style="max-width: 820px; margin: 0.5rem auto 1.25rem auto;">
           Restoring Wholeness Through <br>
@@ -117,7 +120,7 @@
          ========================================================================== -->
     <section class="section bg-ivory">
       <div class="container">
-        <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: center;">
+        <div class="editorial-grid">
           
           <div class="reveal-on-scroll">
             <span class="eyebrow eyebrow-gold">The Center & Physician</span>
@@ -151,12 +154,12 @@
           <div class="reveal-on-scroll">
             <div style="position: relative;">
               <div style="border-radius: 160px 160px var(--radius-lg) var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); border: 4px solid var(--bg-pure); aspect-ratio: 4/5;">
-                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1000&q=80" 
+                <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1000&q=80" 
                      alt="Ayurvedic physician and holistic wellness consultation" 
                      loading="lazy" />
               </div>
               
-              <div style="position: absolute; bottom: -20px; right: -15px; background: rgba(250, 248, 242, 0.96); border: 1px solid var(--border-sage); padding: 1.25rem 1.5rem; border-radius: var(--radius-md); box-shadow: var(--shadow-md); max-width: 250px;">
+              <div class="quote-floating-badge">
                 <p style="font-family: var(--font-serif); font-size: 1.15rem; color: var(--brand-primary); font-weight: 600; margin-bottom: 0.25rem;">
                   “Swasthyasya Swasthya Rakshanam”
                 </p>
@@ -236,7 +239,7 @@
     <section class="section bg-ivory">
       <div class="container">
         <div style="background: var(--bg-pure); border: 1px solid var(--border-sage); border-radius: var(--radius-xl); padding: clamp(2rem, 5vw, 4rem); box-shadow: var(--shadow-md);">
-          <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 3rem; align-items: center;">
+          <div class="editorial-grid" style="align-items: center;">
             
             <div class="reveal-on-scroll">
               <span class="eyebrow">Pharmacological Quality & Integrity</span>
@@ -269,8 +272,8 @@
 
             <div class="reveal-on-scroll">
               <div style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm); border: 3px solid var(--bg-ivory);">
-                <img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?auto=format&fit=crop&w=800&q=80" 
-                     alt="Authentic herbal Ayurvedic medicine bottles and natural formulations" 
+                <img src="https://images.unsplash.com/photo-1514733670139-4d87a1941d55?auto=format&fit=crop&w=800&q=80" 
+                     alt="Authentic herbal Ayurvedic medicine bottles and natural botanical formulations" 
                      loading="lazy" />
               </div>
             </div>

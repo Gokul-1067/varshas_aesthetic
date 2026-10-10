@@ -7,44 +7,59 @@
 
 :root {
   /* ==========================================================================
-     Color Palette (Beige & Light Sage System - Logo Compatible)
+     Richer Earthy Botanical Palette (Warm Beige, Olive Sage, Moss & Forest Green, Antique Gold)
      ========================================================================== */
-  /* Backgrounds */
-  --bg-warm-beige: #F5F0E6;      /* Primary soft canvas */
-  --bg-ivory: #FAF8F2;           /* Soft card & section highlight */
-  --bg-pure: #FFFFFF;            /* Pure white contrast for cards */
-  --bg-sage-light: #EBF3E8;      /* Delicate herbal tint */
-  --bg-sage: #DCE9D5;            /* Calming light sage */
-  --bg-botanical-soft: #C6DDBB;  /* Soft botanical green */
-  --bg-taupe-light: #ECE5DA;     /* Warmer contrast section */
+  /* Main Background: Warm Beige (#E4DCC9) */
+  --bg-main: #E4DCC9;            /* Main background: warm beige */
+  --bg-warm-ivory: #E4DCC9;      /* Primary tranquil canvas alias */
+  --bg-warm-beige: #E4DCC9;      /* Warm beige primary sections */
 
-  /* Brand Accents & Greens (Refined & balanced, avoiding dark-green heavy) */
-  --brand-primary: #3E5F3D;       /* Refined botanical green - accessible */
-  --brand-primary-hover: #324D31;
-  --brand-sage: #5A7C59;         /* Mid sage green */
-  --brand-light-sage: #DCE9D5;
-  --brand-botanical: #C6DDBB;
-  --brand-gold: #9E7E45;         /* Ayurvedic brass/gold highlight */
-  --brand-gold-soft: #F4EBD9;
+  /* Secondary Section Backgrounds & Surfaces: Olive Sage (#AEBE9B) */
+  --bg-secondary: #AEBE9B;       /* Secondary section background: olive sage */
+  --bg-sage: #AEBE9B;            /* Olive sage */
+  --bg-ivory: #AEBE9B;           /* Secondary alternating section: olive sage */
+  --bg-sage-light: #C4D2B2;      /* Delicate lighter olive sage tint */
+  --bg-pure: #FFFFFF;            /* Pure white contrast for inner card bodies */
+  --bg-sand-light: #ECE5D5;      /* Subtle muted sand tint */
+  --bg-dark-feature: #293D30;    /* Forest green for prominent dark feature sections */
 
-  /* Typography Colors */
-  --text-main: #3E3830;          /* Warm charcoal-brown for high readability */
-  --text-body: #514A40;          /* Warm charcoal-brown body text */
-  --text-muted: #726A5E;         /* Secondary descriptive text */
-  --text-light: #948A7D;         /* Muted caption text */
-  --text-on-accent: #FAF8F2;     /* Crisp ivory on dark/green buttons */
+  /* Buttons & Highlights: Moss Green (#6F865D) */
+  --brand-botanical: #6F865D;       /* Moss green - primary buttons & highlights */
+  --brand-botanical-hover: #5B704A; /* Richer, deeper moss green on hover */
+  --brand-botanical-dark: #4D603E;  /* Deep moss green */
+  --brand-botanical-light: #8DA27B; /* Softer moss green */
+  --brand-accent: #6F865D;          /* Moss green accent */
+  --brand-accent-hover: #5B704A;
+  --brand-sage: #4E6542;            /* Deep botanical green */
+  --brand-light-sage: #6F865D;      /* Moss green leaf tone */
+  --brand-sand: #B09A72;            /* Antique gold for decorative details */
+  --brand-gold: #B09A72;            /* Antique gold */
+  --brand-gold-soft: rgba(176, 154, 114, 0.18);
 
-  /* Borders & Dividers */
-  --border-subtle: rgba(81, 74, 64, 0.12);
-  --border-medium: rgba(81, 74, 64, 0.2);
-  --border-sage: #C6DDBB;
-  --border-sage-subtle: rgba(74, 107, 72, 0.2);
+  /* Headings & Text: Forest Green (#293D30) */
+  --brand-primary: #293D30;         /* Forest green primary tone */
+  --brand-primary-hover: #1E2D24;   /* Deeper forest green on hover */
+  --text-main: #293D30;            /* Forest green headings & primary text */
+  --text-body: #324438;            /* Deep forest green for comfortable reading */
+  --text-muted: #4F6355;           /* Muted forest green for secondary text */
+  --text-light: #6A7E70;           /* Soft caption & metadata text */
+  --text-on-accent: #FFFFFF;       /* Pure white on moss green (#6F865D) buttons */
+  --text-on-dark: #FAF8F2;         /* Warm ivory on dark forest features */
 
-  /* Shadows & Elevation */
-  --shadow-sm: 0 2px 8px rgba(81, 74, 64, 0.05);
-  --shadow-md: 0 8px 24px rgba(81, 74, 64, 0.07);
-  --shadow-lg: 0 16px 40px rgba(81, 74, 64, 0.1);
-  --shadow-float: 0 20px 50px rgba(81, 74, 64, 0.14);
+  /* Borders & Small Decorative Details: Antique Gold (#B09A72) */
+  --border-gold: #B09A72;          /* Antique gold */
+  --border-sand: #B09A72;          /* Antique gold alias */
+  --border-subtle: rgba(176, 154, 114, 0.45); /* Subtle antique gold border */
+  --border-medium: #B09A72;                   /* Antique gold border */
+  --border-sage: rgba(111, 134, 93, 0.45);   /* Soft sage/moss border */
+  --border-sage-subtle: rgba(111, 134, 93, 0.25);
+
+  /* Shadows (Tuned to forest green for soft, organic depth) */
+  --shadow-xs: 0 2px 6px rgba(41, 61, 48, 0.05);
+  --shadow-sm: 0 4px 14px rgba(41, 61, 48, 0.08);
+  --shadow-md: 0 10px 28px rgba(41, 61, 48, 0.11);
+  --shadow-lg: 0 20px 48px rgba(41, 61, 48, 0.14);
+  --shadow-float: 0 24px 60px rgba(41, 61, 48, 0.18);
 
   /* Radius */
   --radius-sm: 8px;
@@ -188,12 +203,12 @@ p:last-child {
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--brand-primary);
+  color: var(--text-main);
   margin-bottom: 0.85rem;
   background: var(--bg-sage-light);
   padding: 0.35rem 0.9rem;
   border-radius: var(--radius-pill);
-  border: 1px solid var(--border-sage);
+  border: 1px solid var(--border-sand);
 }
 
 .eyebrow-icon {
@@ -204,8 +219,8 @@ p:last-child {
 
 .eyebrow-gold {
   background: var(--brand-gold-soft);
-  color: var(--brand-gold);
-  border-color: rgba(158, 126, 69, 0.3);
+  color: var(--text-main);
+  border-color: var(--border-sand);
 }
 
 /* ==========================================================================
@@ -270,19 +285,23 @@ p:last-child {
 
 /* Section Background Variations */
 .bg-warm-beige {
-  background-color: var(--bg-warm-beige);
+  background-color: var(--bg-warm-ivory);
 }
 
 .bg-ivory {
-  background-color: var(--bg-ivory);
+  background-color: var(--bg-secondary);
+}
+
+.bg-sage {
+  background-color: var(--bg-secondary);
 }
 
 .bg-sage-tint {
   background-color: var(--bg-sage-light);
 }
 
-.bg-taupe-tint {
-  background-color: var(--bg-taupe-light);
+.bg-sand-tint {
+  background-color: var(--bg-sand-light);
 }
 
 /* ==========================================================================
@@ -314,20 +333,21 @@ p:last-child {
 .relative { position: relative; }
 .overflow-hidden { overflow: hidden; }
 
-/* Demo & Placeholder Badges */
-.badge-placeholder {
+/* Badges */
+.badge-placeholder,
+.badge-gold {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  padding: 0.2rem 0.55rem;
+  padding: 0.25rem 0.65rem;
   border-radius: var(--radius-pill);
-  background: rgba(158, 126, 69, 0.12);
-  color: var(--brand-gold);
-  border: 1px dashed rgba(158, 126, 69, 0.4);
+  background: var(--brand-gold-soft);
+  color: var(--text-main);
+  border: 1px solid var(--border-sand);
 }
 
 .badge-branch-thodiyoor {
@@ -338,9 +358,9 @@ p:last-child {
   font-weight: 600;
   padding: 0.25rem 0.65rem;
   border-radius: var(--radius-pill);
-  background: var(--bg-sage-light);
-  color: var(--brand-primary);
-  border: 1px solid var(--border-sage);
+  background: var(--bg-secondary);
+  color: var(--text-main);
+  border: 1px solid var(--border-sand);
 }
 
 .badge-branch-mynagappally {
@@ -351,9 +371,9 @@ p:last-child {
   font-weight: 600;
   padding: 0.25rem 0.65rem;
   border-radius: var(--radius-pill);
-  background: #EAE6DF;
-  color: var(--text-body);
-  border: 1px solid rgba(81, 74, 64, 0.15);
+  background: var(--bg-sand-light);
+  color: var(--text-main);
+  border: 1px solid var(--border-sand);
 }
 
 .badge-accommodation {
@@ -361,12 +381,36 @@ p:last-child {
   align-items: center;
   gap: 0.35rem;
   font-size: 0.72rem;
-  font-weight: 700;
-  padding: 0.25rem 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0.25rem 0.75rem;
   border-radius: var(--radius-pill);
-  background: #F3EBDD;
-  color: #8C6A30;
-  border: 1px solid #D6C2A2;
+  background: rgba(216, 199, 165, 0.25);
+  color: var(--text-main);
+  border: 1px solid var(--border-sand);
+}
+
+/* Responsive Editorial Split Layouts */
+.editorial-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: center;
+}
+
+.editorial-grid-equal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 5vw, 3.5rem);
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .editorial-grid,
+  .editorial-grid-equal {
+    grid-template-columns: 1fr !important;
+    gap: 2.25rem !important;
+  }
 }
 
 /* Accessible Screen Reader Only */

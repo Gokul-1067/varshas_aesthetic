@@ -184,7 +184,7 @@ function createTreatmentCardHTML(t) {
             </svg>
             ${t.duration}
           </span>
-          <span class="badge-placeholder">Client Demo Guide</span>
+          <span class="badge-gold">Classical Protocol</span>
         </div>
 
         <h3 class="treatment-card-title">${t.title}</h3>

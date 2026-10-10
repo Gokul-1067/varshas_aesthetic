@@ -32,7 +32,7 @@ const TREATMENTS_DATA = [
     pricePlaceholder: "Indicative: ₹1,800 – ₹2,500 / session [Demo Guide]",
     accommodationNote: "Available at Thodiyoor & Mynagappally",
     hasAccommodation: false,
-    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=80",
     description: "A continuous, rhythmic stream of warm herbal medicated oil poured gently over the third eye (forehead) to induce deep meditative tranquility.",
     benefits: [
       "Alleviates insomnia, migraine and chronic stress",
@@ -49,7 +49,7 @@ const TREATMENTS_DATA = [
     pricePlaceholder: "Indicative: ₹1,400 – ₹2,000 / session [Demo Guide]",
     accommodationNote: "Available at Thodiyoor & Mynagappally",
     hasAccommodation: false,
-    image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=800&q=80",
     description: "Localized pooling of warm medicated herbal oil within a dough ring placed over the lumbar spine, neck, or knees for targeted tissue rejuvenation.",
     benefits: [
       "Relieves lower back pain, sciatica and lumbar spondylosis",
@@ -83,7 +83,7 @@ const TREATMENTS_DATA = [
     pricePlaceholder: "Indicative: ₹2,000 – ₹2,800 / session [Demo Guide]",
     accommodationNote: "Available at Thodiyoor & Mynagappally",
     hasAccommodation: false,
-    image: "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80",
     description: "Application of warm boluses of special Njavara medicinal rice cooked in herbal decoctions and cow's milk to nourish muscular and nervous tissues.",
     benefits: [
       "Tones weakened muscles and combats degenerative wasting",
@@ -100,7 +100,7 @@ const TREATMENTS_DATA = [
     pricePlaceholder: "Doctor Consultation + Formulations [Demo Guide]",
     accommodationNote: "Both Branches & Online Consultations",
     hasAccommodation: false,
-    image: "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=800&q=80",
     description: "Targeted Ayurvedic clinical protocols for managing lifestyle disorders (PCOD, digestive imbalances, metabolic syndromes, diabetes support) with Nagarjuna medicines.",
     benefits: [
       "In-depth root-cause Prakriti & Dosha diagnostic evaluation",

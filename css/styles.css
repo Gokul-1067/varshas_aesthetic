@@ -7,59 +7,63 @@
 
 :root {
   /* ==========================================================================
-     Richer Earthy Botanical Palette (Warm Beige, Olive Sage, Moss & Forest Green, Antique Gold)
+     Unified Ayurvedic Palette (Combining Concepts 1, 2 & 3 Strengths)
      ========================================================================== */
-  /* Main Background: Warm Beige (#E4DCC9) */
-  --bg-main: #E4DCC9;            /* Main background: warm beige */
-  --bg-warm-ivory: #E4DCC9;      /* Primary tranquil canvas alias */
-  --bg-warm-beige: #E4DCC9;      /* Warm beige primary sections */
+  /* Main Background: Warm Limestone (#EDE5D5) */
+  --bg-main: #EDE5D5;            /* Main background: warm limestone */
+  --bg-warm-ivory: #EDE5D5;      /* Base light canvas alias */
+  --bg-warm-beige: #EDE5D5;      /* Warm limestone primary sections */
 
-  /* Secondary Section Backgrounds & Surfaces: Olive Sage (#AEBE9B) */
-  --bg-secondary: #AEBE9B;       /* Secondary section background: olive sage */
-  --bg-sage: #AEBE9B;            /* Olive sage */
-  --bg-ivory: #AEBE9B;           /* Secondary alternating section: olive sage */
-  --bg-sage-light: #C4D2B2;      /* Delicate lighter olive sage tint */
-  --bg-pure: #FFFFFF;            /* Pure white contrast for inner card bodies */
-  --bg-sand-light: #ECE5D5;      /* Subtle muted sand tint */
-  --bg-dark-feature: #293D30;    /* Forest green for prominent dark feature sections */
+  /* Secondary Surfaces & Cards: Herbal Sage (#D0DCC1) */
+  --bg-secondary: #D0DCC1;       /* Secondary section background: herbal sage */
+  --bg-sage: #D0DCC1;            /* Herbal sage */
+  --bg-ivory: #D0DCC1;           /* Secondary alternating section: herbal sage */
+  --bg-card: #D0DCC1;            /* Sage green card surface */
+  --bg-sage-light: #DEE8D4;      /* Delicate lighter herbal sage tint */
+  --bg-pure: #FAF8F2;            /* Clean light contrast surface */
+  --bg-sand-light: #F4EFE6;      /* Subtle muted limestone tint */
+  --bg-dark-feature: #304436;    /* Deep forest green for footer & booking CTA */
 
-  /* Buttons & Highlights: Moss Green (#6F865D) */
-  --brand-botanical: #6F865D;       /* Moss green - primary buttons & highlights */
-  --brand-botanical-hover: #5B704A; /* Richer, deeper moss green on hover */
-  --brand-botanical-dark: #4D603E;  /* Deep moss green */
-  --brand-botanical-light: #8DA27B; /* Softer moss green */
-  --brand-accent: #6F865D;          /* Moss green accent */
-  --brand-accent-hover: #5B704A;
-  --brand-sage: #4E6542;            /* Deep botanical green */
-  --brand-light-sage: #6F865D;      /* Moss green leaf tone */
-  --brand-sand: #B09A72;            /* Antique gold for decorative details */
-  --brand-gold: #B09A72;            /* Antique gold */
-  --brand-gold-soft: rgba(176, 154, 114, 0.18);
+  /* Buttons & Highlights: Moss Olive (#71865F) */
+  --brand-botanical: #71865F;       /* Moss olive - primary buttons & interactive highlights */
+  --brand-botanical-hover: #5D704E; /* Deeper moss olive on hover */
+  --brand-botanical-dark: #4A5B3D;  /* Deep moss olive */
+  --brand-botanical-light: #8E9F7F; /* Softer moss olive */
+  --brand-accent: #71865F;          /* Moss olive accent */
+  --brand-accent-hover: #5D704E;
+  --brand-sage: #4A6B48;            /* Botanical logo green */
+  --brand-light-sage: #759972;      /* Logo leaf green */
+  --brand-brass: #B9A47B;           /* Antique brass for subtle decorative details */
+  --brand-gold: #B9A47B;            /* Antique brass alias */
+  --brand-sand: #B9A47B;
+  --brand-gold-soft: rgba(185, 164, 123, 0.18);
 
-  /* Headings & Text: Forest Green (#293D30) */
-  --brand-primary: #293D30;         /* Forest green primary tone */
-  --brand-primary-hover: #1E2D24;   /* Deeper forest green on hover */
-  --text-main: #293D30;            /* Forest green headings & primary text */
-  --text-body: #324438;            /* Deep forest green for comfortable reading */
-  --text-muted: #4F6355;           /* Muted forest green for secondary text */
-  --text-light: #6A7E70;           /* Soft caption & metadata text */
-  --text-on-accent: #FFFFFF;       /* Pure white on moss green (#6F865D) buttons */
-  --text-on-dark: #FAF8F2;         /* Warm ivory on dark forest features */
+  /* Headings & Text: Deep Forest Green (#304436) */
+  --brand-primary: #304436;         /* Deep forest green primary tone */
+  --brand-primary-hover: #223328;   /* Deeper forest green on hover */
+  --text-main: #304436;            /* Deep forest green headings & primary text */
+  --text-body: #364A3D;            /* Deep forest green for comfortable reading */
+  --text-muted: #53685A;           /* Muted forest green for secondary text */
+  --text-light: #6E8275;           /* Soft caption & metadata text */
+  --text-on-accent: #FFFFFF;       /* Pure white on moss olive (#71865F) buttons */
+  --text-on-dark: #EDE5D5;         /* Warm limestone on deep forest green features */
+  --text-on-dark-muted: #D0DCC1;   /* Herbal sage on deep forest green features */
 
-  /* Borders & Small Decorative Details: Antique Gold (#B09A72) */
-  --border-gold: #B09A72;          /* Antique gold */
-  --border-sand: #B09A72;          /* Antique gold alias */
-  --border-subtle: rgba(176, 154, 114, 0.45); /* Subtle antique gold border */
-  --border-medium: #B09A72;                   /* Antique gold border */
-  --border-sage: rgba(111, 134, 93, 0.45);   /* Soft sage/moss border */
-  --border-sage-subtle: rgba(111, 134, 93, 0.25);
+  /* Borders & Small Decorative Details: Antique Brass (#B9A47B) */
+  --border-brass: #B9A47B;         /* Antique brass */
+  --border-gold: #B9A47B;
+  --border-sand: #B9A47B;
+  --border-subtle: rgba(185, 164, 123, 0.4); /* Subtle antique brass border */
+  --border-medium: #B9A47B;                  /* Antique brass border */
+  --border-sage: rgba(113, 134, 95, 0.45);   /* Soft sage border */
+  --border-sage-subtle: rgba(113, 134, 95, 0.25);
 
-  /* Shadows (Tuned to forest green for soft, organic depth) */
-  --shadow-xs: 0 2px 6px rgba(41, 61, 48, 0.05);
-  --shadow-sm: 0 4px 14px rgba(41, 61, 48, 0.08);
-  --shadow-md: 0 10px 28px rgba(41, 61, 48, 0.11);
-  --shadow-lg: 0 20px 48px rgba(41, 61, 48, 0.14);
-  --shadow-float: 0 24px 60px rgba(41, 61, 48, 0.18);
+  /* Shadows (Tuned to deep forest green for organic depth) */
+  --shadow-xs: 0 2px 6px rgba(48, 68, 54, 0.05);
+  --shadow-sm: 0 4px 14px rgba(48, 68, 54, 0.07);
+  --shadow-md: 0 10px 28px rgba(48, 68, 54, 0.1);
+  --shadow-lg: 0 20px 48px rgba(48, 68, 54, 0.13);
+  --shadow-float: 0 24px 60px rgba(48, 68, 54, 0.18);
 
   /* Radius */
   --radius-sm: 8px;

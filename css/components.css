@@ -59,7 +59,7 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: rgba(228, 220, 201, 0.94);
+  background-color: rgba(237, 229, 213, 0.94);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border-medium);
@@ -68,7 +68,7 @@
 
 .site-header.is-scrolled {
   box-shadow: var(--shadow-sm);
-  background-color: rgba(228, 220, 201, 0.98);
+  background-color: rgba(237, 229, 213, 0.98);
 }
 
 .nav-container {
@@ -411,7 +411,7 @@
   position: absolute;
   bottom: 24px;
   left: -20px;
-  background: rgba(228, 220, 201, 0.95);
+  background: rgba(237, 229, 213, 0.95);
   backdrop-filter: blur(10px);
   border: 1px solid var(--border-medium);
   border-radius: var(--radius-md);
@@ -559,7 +559,7 @@
 }
 
 .treatment-card {
-  background: var(--bg-pure);
+  background: var(--bg-card);
   border: 1px solid var(--border-medium);
   border-radius: var(--radius-md);
   overflow: hidden;
@@ -972,7 +972,7 @@
 .modal-backdrop {
   position: fixed;
   inset: 0;
-  background-color: rgba(41, 61, 48, 0.72);
+  background-color: rgba(48, 68, 54, 0.78);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   z-index: 999;
@@ -1009,10 +1009,26 @@
 }
 
 .modal-header {
-  padding: 1.5rem 1.75rem 1rem 1.75rem;
+  padding: 1.5rem 1.75rem 1.15rem 1.75rem;
   border-bottom: 1px solid var(--border-medium);
   position: relative;
-  background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-warm-beige) 100%);
+  background: linear-gradient(180deg, #24352A 0%, var(--bg-dark-feature) 100%);
+}
+
+.modal-header .section-title,
+.modal-header h3,
+.modal-header #modalTitle {
+  color: #FAF8F2 !important;
+}
+
+.modal-header p {
+  color: var(--text-on-dark-muted) !important;
+}
+
+.modal-header .eyebrow {
+  background: rgba(237, 229, 213, 0.14);
+  color: var(--text-on-dark);
+  border: 1px solid rgba(185, 164, 123, 0.5);
 }
 
 .modal-close-btn {
@@ -1022,9 +1038,9 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: var(--bg-pure);
-  border: 1px solid var(--border-medium);
-  color: var(--text-main);
+  background: rgba(237, 229, 213, 0.12);
+  border: 1px solid rgba(185, 164, 123, 0.6);
+  color: var(--text-on-dark);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1136,10 +1152,10 @@
 }
 
 /* ==========================================================================
-   Footer
+   Footer (Deep Forest Green #304436 with Warm Limestone & Herbal Sage Text)
    ========================================================================== */
 .site-footer {
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-dark-feature);
   border-top: 1px solid var(--border-medium);
   padding-top: clamp(4rem, 6vw, 5.5rem);
   padding-bottom: 2.5rem;
@@ -1154,7 +1170,7 @@
 }
 
 .footer-brand p {
-  color: var(--text-muted);
+  color: var(--text-on-dark-muted);
   font-size: 0.92rem;
   margin-top: 1rem;
   margin-bottom: 1.5rem;
@@ -1167,7 +1183,7 @@
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--text-main);
+  color: #FAF8F2;
   margin-bottom: 1.25rem;
 }
 
@@ -1180,12 +1196,12 @@
 
 .footer-link {
   font-size: 0.9rem;
-  color: var(--text-body);
+  color: var(--text-on-dark-muted);
   transition: var(--transition-fast);
 }
 
 .footer-link:hover {
-  color: var(--text-main);
+  color: #FFFFFF;
   font-weight: 600;
   padding-left: 4px;
 }
@@ -1201,9 +1217,9 @@
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: var(--bg-warm-beige);
+  background: rgba(237, 229, 213, 0.12);
   border: 1px solid var(--border-medium);
-  color: var(--text-main);
+  color: var(--text-on-dark);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1218,7 +1234,7 @@
 }
 
 .footer-bottom {
-  border-top: 1px solid var(--border-medium);
+  border-top: 1px solid rgba(185, 164, 123, 0.3);
   padding-top: 2rem;
   display: flex;
   align-items: center;
@@ -1226,11 +1242,11 @@
   flex-wrap: wrap;
   gap: 1rem;
   font-size: 0.82rem;
-  color: var(--text-light);
+  color: var(--text-on-dark-muted);
 }
 
 /* ==========================================================================
-   Final Call To Action (Homepage Pre-Footer Banner)
+   Final Call To Action (Booking Section - Deep Forest Green #304436)
    ========================================================================== */
 .final-cta-section {
   padding-top: clamp(3.5rem, 6vw, 5.5rem);
@@ -1240,12 +1256,12 @@
 }
 
 .final-cta-container {
-  background: linear-gradient(145deg, #BDCDB0 0%, var(--bg-secondary) 100%);
+  background: linear-gradient(145deg, #24352A 0%, var(--bg-dark-feature) 100%);
   border: 1px solid var(--border-medium);
   border-radius: var(--radius-xl);
   padding: clamp(3rem, 5.5vw, 4.75rem) clamp(1.5rem, 4vw, 3.5rem);
   text-align: center;
-  box-shadow: 0 16px 40px rgba(41, 61, 48, 0.1), 0 2px 6px rgba(41, 61, 48, 0.04);
+  box-shadow: 0 16px 40px rgba(48, 68, 54, 0.2), 0 2px 6px rgba(48, 68, 54, 0.08);
   position: relative;
   overflow: hidden;
 }
@@ -1258,7 +1274,7 @@
   transform: translateX(-50%);
   width: 520px;
   height: 320px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+  background: radial-gradient(circle, rgba(185, 164, 123, 0.15) 0%, rgba(48, 68, 54, 0) 70%);
   pointer-events: none;
 }
 
@@ -1272,9 +1288,9 @@
 
 .final-cta-eyebrow {
   margin-bottom: 1.25rem;
-  background: var(--bg-warm-beige);
-  color: var(--text-main);
-  border: 1px solid var(--border-medium);
+  background: rgba(237, 229, 213, 0.12);
+  color: var(--text-on-dark);
+  border: 1px solid rgba(185, 164, 123, 0.5);
   letter-spacing: 0.16em;
 }
 
@@ -1282,7 +1298,7 @@
   font-family: var(--font-serif);
   font-size: clamp(2.2rem, 4.5vw, 3.35rem);
   font-weight: 600;
-  color: var(--text-main);
+  color: #FAF8F2;
   line-height: 1.15;
   margin-bottom: 1.25rem;
   letter-spacing: -0.01em;
@@ -1291,7 +1307,7 @@
 .final-cta-lead {
   font-family: var(--font-sans);
   font-size: clamp(1.02rem, 1.6vw, 1.15rem);
-  color: var(--text-body);
+  color: var(--text-on-dark-muted);
   line-height: 1.68;
   max-width: 620px;
   margin-left: auto;
@@ -1308,23 +1324,23 @@
 }
 
 .final-cta-buttons .btn {
-  box-shadow: 0 4px 14px rgba(41, 61, 48, 0.08);
+  box-shadow: 0 4px 14px rgba(48, 68, 54, 0.2);
   transition: transform var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
 }
 
 .final-cta-buttons .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(41, 61, 48, 0.16);
+  box-shadow: 0 8px 20px rgba(48, 68, 54, 0.3);
 }
 
 .final-cta-buttons .btn:active {
   transform: translateY(1px);
-  box-shadow: 0 2px 6px rgba(41, 61, 48, 0.08);
+  box-shadow: 0 2px 6px rgba(48, 68, 54, 0.15);
 }
 
 .final-cta-call-btn {
-  background-color: var(--bg-warm-beige);
-  color: var(--text-main);
+  background-color: transparent;
+  color: var(--text-on-dark);
   border: 1.5px solid var(--border-medium);
   font-weight: 600;
 }

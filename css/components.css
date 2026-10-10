@@ -1213,6 +1213,116 @@
 }
 
 /* ==========================================================================
+   Final Call To Action (Homepage Pre-Footer Banner)
+   ========================================================================== */
+.final-cta-section {
+  padding-top: clamp(3.5rem, 6vw, 5.5rem);
+  padding-bottom: clamp(3.5rem, 6vw, 5.5rem);
+  background-color: var(--bg-warm-beige);
+  position: relative;
+}
+
+.final-cta-container {
+  background: linear-gradient(145deg, #EBF3E8 0%, #DCE9D5 50%, #D2E4CC 100%);
+  border: 1px solid var(--border-sage);
+  border-radius: var(--radius-xl);
+  padding: clamp(3rem, 5.5vw, 4.75rem) clamp(1.5rem, 4vw, 3.5rem);
+  text-align: center;
+  box-shadow: 0 16px 40px rgba(62, 95, 61, 0.08), 0 2px 6px rgba(81, 74, 64, 0.04);
+  position: relative;
+  overflow: hidden;
+}
+
+.final-cta-container::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 520px;
+  height: 320px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0) 70%);
+  pointer-events: none;
+}
+
+.final-cta-content {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.final-cta-eyebrow {
+  margin-bottom: 1.25rem;
+  background: rgba(250, 248, 242, 0.9);
+  color: var(--brand-primary);
+  border: 1px solid rgba(74, 107, 72, 0.22);
+  letter-spacing: 0.16em;
+}
+
+.final-cta-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.2rem, 4.5vw, 3.35rem);
+  font-weight: 600;
+  color: var(--brand-primary);
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.01em;
+}
+
+.final-cta-lead {
+  font-family: var(--font-sans);
+  font-size: clamp(1.02rem, 1.6vw, 1.15rem);
+  color: var(--text-body);
+  line-height: 1.68;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2.35rem;
+}
+
+.final-cta-buttons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.final-cta-buttons .btn {
+  box-shadow: 0 4px 14px rgba(81, 74, 64, 0.08);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.final-cta-buttons .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(62, 95, 61, 0.16);
+}
+
+.final-cta-buttons .btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 6px rgba(62, 95, 61, 0.12);
+}
+
+.final-cta-call-btn {
+  background-color: var(--bg-ivory);
+  color: var(--brand-primary);
+  border: 1.5px solid var(--brand-primary);
+  font-weight: 600;
+}
+
+.final-cta-call-btn:hover {
+  background-color: var(--brand-primary);
+  color: var(--text-on-accent);
+  border-color: var(--brand-primary);
+}
+
+.final-cta-call-btn svg {
+  stroke: currentColor;
+}
+
+/* ==========================================================================
    Responsive Breakpoints
    ========================================================================== */
 @media (max-width: 1024px) {
@@ -1313,5 +1423,29 @@
   .footer-bottom {
     flex-direction: column;
     text-align: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .final-cta-container {
+    padding: 2.75rem 1.25rem;
+    border-radius: var(--radius-lg);
+  }
+  .final-cta-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.85rem;
+  }
+  .final-cta-buttons .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .final-cta-buttons .btn {
+    transition: none !important;
+    transform: none !important;
   }
 }

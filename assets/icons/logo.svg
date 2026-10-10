@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80" fill="none">
+  <!-- Botanical Emblem -->
+  <g transform="translate(10, 8)">
+    <!-- Outer soft circle glow -->
+    <circle cx="32" cy="32" r="30" fill="#EBF3E8" stroke="#C6DDBB" stroke-width="1.5"/>
+    
+    <!-- Central Lotus & Herbal Leaf Motif -->
+    <path d="M32 16 C34 24, 42 28, 46 36 C42 42, 36 44, 32 48 C28 44, 22 42, 18 36 C22 28, 30 24, 32 16 Z" 
+          fill="#4A6B48" fill-opacity="0.85"/>
+    <path d="M32 22 C32 30, 24 35, 18 36 C23 44, 30 45, 32 48" 
+          stroke="#FAF8F2" stroke-width="1.2" stroke-linecap="round"/>
+    <path d="M32 22 C32 30, 40 35, 46 36 C41 44, 34 45, 32 48" 
+          stroke="#FAF8F2" stroke-width="1.2" stroke-linecap="round"/>
+    <path d="M32 26 L32 44" 
+          stroke="#FAF8F2" stroke-width="1.5" stroke-linecap="round"/>
+          
+    <!-- Side Flourishing Leaves -->
+    <path d="M22 38 C14 36, 12 28, 14 24 C18 28, 22 32, 22 38 Z" fill="#759972"/>
+    <path d="M42 38 C50 36, 52 28, 50 24 C46 28, 42 32, 42 38 Z" fill="#759972"/>
+
+    <!-- Small Golden/Brass Wellness Dot -->
+    <circle cx="32" cy="15" r="2.5" fill="#BFA36F"/>
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(86, 26)">
+    <!-- Doctor Varsha's -->
+    <text x="0" y="4" font-family="'Cormorant Garamond', 'Playfair Display', Georgia, serif" font-size="22" font-weight="600" fill="#2E2822" letter-spacing="0.5">
+      Dr. Varsha's
+    </text>
+    
+    <!-- Subtitle -->
+    <text x="1" y="22" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="700" fill="#4A6B48" letter-spacing="2.8">
+      AYURVEDIC TREATMENT CENTER
+    </text>
+
+    <!-- Branch line -->
+    <text x="1" y="36" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="8" font-weight="500" fill="#7D7467" letter-spacing="1.2">
+      THODIYOOR &#8226; MYNAGAPPALLY
+    </text>
+  </g>
+</svg>
